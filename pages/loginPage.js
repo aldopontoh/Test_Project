@@ -8,7 +8,7 @@ class LoginPage {
 
     this.passwordInput = Selector("#Password");
 
-    this.submitButton = Selector("input.button-1.login-button");
+    this.submitButton = Selector(".button-1.login-button");
 
     this.accountHeader = Selector("strong").withText("Returning Customer");
 
