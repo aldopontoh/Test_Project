@@ -5,7 +5,7 @@ import searchresults from '../pages/SearchResultPage'
 import productdetails from '../pages/ProductDetailsPage'
 import cartpage from '../pages/CartPage'
 import checkoutpage from '../pages/CheckoutPage'
-import myorderpage from '../pages/MyOrdersPage'
+//import myorderpage from '../pages/MyOrdersPage'
 
 const URL = 'https://demo.nopcommerce.com/';
 const getURL = ClientFunction(() => window.location.href);
@@ -68,7 +68,8 @@ test("Place Order E2E Tests", async (t) => {
         .expect(checkoutpage.orderConfirmationMessage.exists).ok()
         .click(checkoutpage.viewOrderDetailsLink)
         .click(homepage.MyAccountLink)
-        .click(myorderpage.orders);
+        //.debug()
+        .click(homepage.OrdersLink);
 });
 
 test("Change Currency Test", async (t) => {
